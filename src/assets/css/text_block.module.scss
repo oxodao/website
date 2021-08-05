@@ -1,0 +1,13 @@
+.TextBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+
+    p {
+        max-width: 45ch;
+        text-align: justify;
+        color: var(--color-fg-white);
+    }
+
+}

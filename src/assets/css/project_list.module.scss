@@ -1,0 +1,22 @@
+.ProjectList {
+  &__Title {
+    width: 100%;
+    background: var(--color-bg-dark);
+    text-align: center;
+
+    color: #f4eee4;
+    text-shadow: var(--color-fg-yellowish-glow);
+    padding: .5em;
+  }
+
+  &__Description {
+    text-align: center;
+    color: var(--color-fg-white);
+  }
+
+  &__List {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+}
