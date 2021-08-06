@@ -1,6 +1,5 @@
 .Project {
   width: 90%;
-  height: 300px; // @TODO: Temporaire
 
   margin: 2em auto 2em auto;
   background: var(--color-bg-dark);
@@ -16,37 +15,61 @@
   gap: 1em;
 
   &__Image {
-      grid-area: image;
-      height: 100%;
-      width: 100%;
-      object-fit: cover;
+    grid-area: image;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
   }
 
   &__Description {
-      grid-area: description;
-    
-      h1 {
-          text-align: center;
-          color: #f4eee4;
-          text-shadow: var(--color-fg-yellowish-glow);
-      }
+    grid-area: description;
+    // text-align: justify;
+    padding: 0 1em;
 
-      p {
-          color: var(--color-fg-white);
-      }
+    h1 {
+      text-align: center;
+      color: #f4eee4;
+      text-shadow: var(--color-fg-yellowish-glow);
+    }
+
+    p {
+      color: var(--color-fg-white);
+    }
   }
 
   &__Links {
-      grid-area: links;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: right;
-      margin: 0 2em 0 2em;
-      gap: 1em;
+    grid-area: links;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    margin: 0 2em 0 2em;
+    gap: 1em;
 
-      p {
-          color: var(--color-fg-white);
-      }
+    p {
+      color: var(--color-fg-white);
+    }
+  }
+
+
+  /**
+   * @TODO: Implement responsive properly
+   */
+
+  @media(max-width: 900px) {
+    grid-template-areas: 'image' 'description' 'links';
+    width: min-content;
+    grid-template-rows: auto;
+
+    gap: 0;
+
+    &__Image {
+
+      border-radius: .25em;
+    }
+
+    &__Links {
+      margin-bottom: 1em;
+    }
   }
 }

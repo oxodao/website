@@ -1,55 +1,68 @@
+@import '_mixins';
+
 *,
 *:before,
 *:after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 svg, img, picture {
-    display: block;
-    max-width: 100%;
+  display: block;
+  max-width: 100%;
 }
 
 body {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 
-    background-color: var(--color-bg);
+  background-color: var(--color-bg);
 }
 
 #root {
-    max-width: min(60em, 100%);
-    margin: auto;
+  max-width: min(60em, 100%);
+  margin: auto;
 }
 
 :root {
-    --color-dark: #171520;
-    --color-bg-darker: #171520;
-    --color-bg-dark: #241b2f;
+  --color-dark: #171520;
+  --color-bg-darker: #171520;
+  --color-bg-dark: #241b2f;
 
-    --color-bg: #2a2139;
+  --color-bg: #2a2139;
 
-    --color-fg-yellowish-glow: 0 0 2px #393a33, 0 0 8px #f39f0575, 0 0 2px #f39f0575;
+  --color-fg-yellowish-glow: 0 0 2px #393a33, 0 0 8px #f39f0575, 0 0 2px #f39f0575;
 
-    --color-fg-white: #dadbe0;
+  --color-fg-white: #dadbe0;
 
-    --color-fg-green: #6de5af;
+  --color-fg-green: #6de5af;
 }
 
 .title {
-    width: 100%;
-    background: var(--color-bg-dark);
-    color: #fdfdfd;
-    text-shadow: 0 0 2px #001716, 0 0 3px #03edf975, 0 0 5px #03edf975, 0 0 8px #03edf975;
-    text-align: center;
-    padding: .5em;
+  @include title;
+  color: #fdfdfd;
+  text-shadow: 0 0 2px #001716, 0 0 3px #03edf975, 0 0 5px #03edf975, 0 0 8px #03edf975;
 }
 
 .green {
-    color: var(--color-fg-green);
-    text-shadow: 0 0 2px #100c0f, 0 0 5px #257c5575, 0 0 25px #21272475;
+  color: var(--color-fg-green);
+  text-shadow: 0 0 2px #100c0f, 0 0 5px #257c5575, 0 0 25px #21272475;
 }
 
 .blue {
-    color: #fdfdfd;
-    text-shadow: 0 0 2px #001716, 0 0 3px #03edf975, 0 0 5px #03edf975, 0 0 8px #03edf975;
+  color: #fdfdfd;
+  text-shadow: 0 0 2px #001716, 0 0 3px #03edf975, 0 0 5px #03edf975, 0 0 8px #03edf975;
+}
+
+.Contact {
+
+  &__List {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: row;
+    gap: 4em;
+
+    img {
+      height: 3em;
+    }
+  }
 }
