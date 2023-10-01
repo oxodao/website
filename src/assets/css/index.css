@@ -1,0 +1,50 @@
+html, body, #root {
+    margin: 0;
+    padding: 0;
+    background-color: #241b2f;
+    color: #DAE0F2;
+
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+
+    scroll-behavior: smooth;
+}
+
+a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+.primary {
+    color: #DAE0F2;
+}
+
+.secondary {
+    color: #DAE0F2;
+}
+
+.main_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main_content > div {
+    width: min(70ch, 90%);
+    margin: 5em;
+
+    text-align: justify;
+}
+
+
+.main_content h1 {
+    padding-bottom: .5em;
+    border-bottom: 1px solid white;
+}

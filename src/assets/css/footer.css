@@ -1,0 +1,15 @@
+#footer {
+    background-color: #171520;
+    color: #626065;
+}
+
+#footer .inner {
+    max-width: 80%;
+    margin: 2em auto;
+    padding: 2em;
+}
+
+#footer .inner ul {
+    margin: 2em 0 0 0;
+    padding: 0;
+}

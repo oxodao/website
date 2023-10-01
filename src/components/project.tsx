@@ -1,32 +1,26 @@
-import { ReactNode } from "react";
-
-import styles from '../assets/css/project.module.scss';
-import Link from "./link";
+import { Project as ProjectObj } from "../types/project";
+import '../assets/css/project.css';
+import Colored from "./colored";
 
 type Props = {
-    title: string;
-    image: string;
-    links?: Record<string, string>;
-    children: ReactNode;
-};
+    project: ProjectObj;
+}
 
-export default function Project({image, title, links, children}: Props) {
-    return <article className={styles.Project}>
-        <img className={styles.Project__Image} src={image} alt={title} />
-        <div className={styles.Project__Description}>
-            <h1>{title}</h1>
-            {children}
+export default function Project({project}: Props) {
+    return <article className="Project">
+        <img src={`/assets/${project.image}.avif`} alt={project.title} />
+        <div className="Project__Content">
+            <h3><Colored color="YELLOW">{project.title}</Colored></h3>
+            {project.description}
         </div>
-        <div className={styles.Project__Links}>
+        <div className="Project__Links">
             {
-                links && 
-                Object.keys(links).map((key, index) => (
-                    <Link key={index} text={key} to={links[key]} style={"Button"}/>
-                ))
+                project.links && project.links.length > 0 && project.links.map(x => <a href={x.url} key={x.name}><Colored color="GREEN">{x.name}</Colored></a>)
             }
             {
-                !links &&
-                <p>Non disponible au grand public</p>
+                (!project.links || project.links.length === 0)
+                && !project.placeholder
+                && <p>Not available publicly</p>
             }
         </div>
     </article>

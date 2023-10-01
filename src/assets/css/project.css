@@ -1,0 +1,62 @@
+.Project {
+    margin: 2em auto;
+    background-color: #2a2139;
+    border: 1px solid #171520;
+    display: grid;
+    border-radius: .25em;
+    grid-template-areas: "image description" "image links";
+    grid-template-rows: 1fr 4em;
+    grid-template-columns: 20em 1fr;
+    gap: 1em;
+}
+
+.Project img {
+    grid-area: image;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.Project .Project__Content {
+    grid-area: description;
+    padding: 0 1em;
+    color: #dadbe0;
+}
+
+.Project .Project__Content h3 {
+    text-align: center;
+    margin-top: 1em;
+}
+
+.Project .Project__Links {
+    grid-area: links;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    margin: 0 1em;
+    gap: 1em;
+}
+
+.Project .Project__Links a {
+    background-color: rgba(0, 0, 0, .4);
+    padding: .25em .5em .25em .5em;
+    border-radius: .25em;
+}
+
+@media (max-width: 900px) {
+    .Project {
+        grid-template-areas: "image" "description" "links";
+        width: min-content;
+        gap: 0;
+        grid-template-rows: 1fr auto;
+    }
+
+    .Project img {
+        border-radius: .25em .25em 0 0 ;
+    }
+
+    .Project .Project__Links {
+        margin-bottom: 1em;
+    }
+}
