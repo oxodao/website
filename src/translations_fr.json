@@ -1,0 +1,110 @@
+{
+    "hero": {
+        "iam": "Je suis <1>Nathan JANCZEWSKI</1>",
+        "title": "Software engineer"
+    },
+    "about_me": {
+        "title": "Qui suis-je ?",
+        "line1": "Curieux, passioné par la programmation et la résolution de problèmes, je passe mon temps libre à faire de la veille technologique et coder mes projets personnels.",
+        "line2": "Après un DUT à <1>l'IUT de Reims</1>, j'ai obtenu mon diplôme d'ingénieur informatique au <3>Cnam</3>",
+        "line3": "J'ai effectué mon alternance à <1>Un-zéro-un</1>, une agence web localisée à Charleville-Mézières. Puis j'ai travaillé <3>Spacefoot</3> dans l'équipe e-commerce, où j'étais en charge du développement de l'outil interne et l'intégration technique avec les différentes marketplaces."
+    },
+    "projects": {
+        "title": "Projets",
+        "not_available_publicly": "Pas disponible publiquement",
+        "pro": "Projets professionnels",
+        "perso": "Projets personnels",
+        "built_with": "Fait avec",
+        "built_in": "Fait en",
+
+        "your_company": {
+            "title": "Votre entreprise",
+            "line1": "Je suis actuellement à la recherche d'un emploi. Construisons quelque chose de cool ensemble !",
+            "links": {
+                "contact_me": "Contactez moi !"
+            }
+        },
+        "mpi": {
+            "title": "MP Integrator",
+            "line1": "À <1>Spacefoot</1>, la majorité de mon travail était sur cet outil.",
+            "line2": "Il est utilisé pour synchroniser les offres sur de multiples et faciliter la création de produits entre autre."
+        },
+        "deal_and_co": {
+            "title": "Deal&Co",
+            "line1": "Pendant mon alternance à <1>Un-zéro-un</1>, j'ai travaillé sur l'API pour notre client Deal&Co.",
+            "line2": "Cette application mobile permet de trouver des réductions, cadeaux, ... avec les partenaires aux alentours.",
+            "links": {
+                "applestore": "Apple Store",
+                "playstore": "Play Store",
+                "website": "Site web"
+            }
+        },
+        "gescicca": {
+            "title": "Gescicc@",
+            "line1": "Développé par le <1>Lab'S DN</1> au <3>Cnam</3>, Gescicc@ est le logiciel de gestion de scolarité interne sur lequel j'ai travaillé durant les deux premières années de mon alternance.",
+            "line2": "Il permet la gestion exhaustive des besoins d'un centre Cnam et est utilisé par tous les centres dans le monde."
+        },
+        "cotemeuse": {
+            "title": "Côté-Meuse",
+            "line1": "Après mon stage, j'ai travaillé un mois à Un-zéro-un. J'ai eu l'occasion de travailler sur la marketplace Côté-Meuse.",
+            "links": {
+                "website": "Site web"
+            }
+        },
+        "prowty": {
+            "title": "Prowty",
+            "line1": "Pas encore disponible, ce projet est une plateforme pour prévoir des évènements avec ses amis.",
+            "line2": "Le but est de centraliser tous les aspects nécessaires à la préparation d'une soirée, d'un voyage, ou autre.",
+            "line3": "Répartition des dépenses, tâches à faire, partage des photos du voyage, etc..."
+        },
+        "metaprint": {
+            "title": "Metaprint",
+            "line1": "Simple outil pour afficher des informations à propos de l'ordinateur (Utilisation de la RAM, température du CPU, ...), utile pour i3 et tmux.",
+            "line2": "Je voulais avoir un outil simple mais configurable pour s'occuper de ce problème, permettant aussi de gérer plusieurs ordinateurs, sans dépendances externes.",
+            "links": {
+                "github": "Github",
+                "aur": "Télécharger (AUR)"
+            }
+        },
+        "cao": {
+            "title": "Cards Against Overflow",
+            "line1": "Cards Against Humanity est un jeu de carte open-source, similaire à Blanc Manger Coco ou Limite Limite.",
+            "line2": "Cette version vous permet de jouer en ligne avec vos amis.",
+            "line3": "Pour des raisons légales, les cartes ne sont pas fournies, mais un format JSON vous permet d'importer facilement vos decks.",
+            "line4": "Une nouvelle version en React à commencé à être écrite mais est toujours WIP.",
+            "links": {
+                "github_next": "Github (WIP)",
+                "github": "Github"
+            }
+        },
+        "tpbt": {
+            "title": "TwitchPlaysBlindTest",
+            "line1": "Ce logiciel est designé pour être hébergé et proposé en SaaS à des streameurs souhaitant créer des blind-tests.",
+            "line2": "Un système de score et de leaderboard a été implémenté, tout automatisé via l'API de Twitch.",
+            "line3": "Créé à la base pour la chaine de JosetteLaChèvre, il n'a malheureusement pas été utilisé.",
+            "links": {
+                "github": "Github",
+                "jlc_twitch": "Twitch JosetteLaChèvre"
+            }
+        },
+        "snapdesk": {
+            "title": "SnapDesk",
+            "line1": "Un des premier projet que j'ai développé.",
+            "line2": "SnapDesk était un client Snapchat pour PC, codé en Java.",
+            "line3": "Tout était fonctionnel, cependant suite aux fortes restrictions API implémentées par <1>Snap Inc.</1> début 2014, ce n'était plus possible de continuer."
+        }
+    },
+    "contact": {
+        "title": "Contact",
+        "line1_l4j": "J'ai piqué votre curiosité ? Je recherche un emploi, contactez moi !",
+        "line1_nl4j": "Vous souhaitez me contacter ?",
+        "line2": "Envoyez moi un mail à",
+        "line3": "Ou retrouvez moi sur <1>Github</1>, <3>Twitter</3> et <5>Linkedin</5>"
+    },
+    "credits": {
+        "title": "Crédits",
+        "font": "Police d'écriture",
+        "hero_img": "Image héro par <1>Danny Nanni</1> sur Unsplash",
+        "design": "Design inspiré par le thème VSCode <1>Synthwave84 de Robb Owen</1>"
+    }
+}

@@ -1,0 +1,14 @@
+.flag {
+    max-width: 4em;
+}
+
+.LanguageSelector {
+    position: fixed;
+
+    bottom: 1em;
+    right: 1em;
+
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}

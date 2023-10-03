@@ -1,18 +1,25 @@
+import { Trans } from "react-i18next";
 import Colored from "../components/colored";
 import { IS_LOOKING_FOR_JOB } from "../main";
 
 export default function Contact() {
     return <section id="contact" className="main_content">
         <div>
-            <h1><Colored color="GREEN">0x03. Contact</Colored></h1>
-            { IS_LOOKING_FOR_JOB && <p>Did I peak your interest ? I'm looking for a job, contact me !</p> }
-            { !IS_LOOKING_FOR_JOB && <p>Want to reach out ?</p> }
+            <h1><Colored color="GREEN">0x03. <Trans i18nKey="contact.title"></Trans></Colored></h1>
+            <p>
+                <Trans i18nKey={IS_LOOKING_FOR_JOB ? 'contact.line1_l4j' : 'contact.line1_nl4j'}>
+                    Want to reach out?
+                </Trans>
+            </p>
 
             <p style={{textAlign: 'initial'}}>
-                Contact me by email at <Colored color="GREEN"><a href="mailto:nathan@janczewski.fr">nathan@janczewski.fr</a></Colored>
+                <Trans i18nKey="contact.line2">Contact me by email at</Trans>
+                &nbsp;<Colored color="GREEN"><a href="mailto:nathan@janczewski.fr">nathan@janczewski.fr</a></Colored>
             </p>
             <p>
-                You can also find me on <Colored color="GREEN"><a href="https://github.com/oxodao" target="_blank" rel="norefferer noopener">Github</a></Colored>, <Colored color="GREEN"><a href="https://x.com/oxodao" target="_blank" rel="norefferer noopener">Twitter</a></Colored> and <Colored color="GREEN"><a href="https://www.linkedin.com/in/nathan-janczewski-5736b2131/" target="_blank" rel="norefferer noopener">Linkedin</a></Colored>
+                <Trans i18nKey="contact.line3">
+                    You can also find me on <a className="colored GREEN" href="https://github.com/oxodao" target="_blank" rel="norefferer noopener">Github</a>, <a className="colored GREEN" href="https://x.com/oxodao" target="_blank" rel="norefferer noopener">Twitter</a> and <a className="colored GREEN" href="https://www.linkedin.com/in/nathan-janczewski-5736b2131/" target="_blank" rel="norefferer noopener">Linkedin</a>
+                </Trans>
             </p>
         </div>
     </section>
