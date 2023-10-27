@@ -1,14 +1,41 @@
 .flag {
-    max-width: 4em;
+    max-width: 3em;
+    cursor: pointer;
 }
 
 .LanguageSelector {
     position: fixed;
 
-    bottom: 1em;
-    right: 1em;
+    bottom: 3em;
+    right: 3em;
 
     display: flex;
     flex-direction: row;
     gap: 1em;
+    padding: 1em;
+}
+
+.LanguageSelector__Selector {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    background: rgba(0, 0, 0, .8);
+    padding: .5em;
+    border-radius: 10px;
+}
+
+.LanguageSelector__Selector:after {
+	content: '';
+	position: absolute;
+	bottom: 5px;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+    border-top-color: rgba(0, 0, 0, .8);
+	border-bottom: 0;
+	margin-left: -18px;
+	margin-bottom: -20px;
 }
