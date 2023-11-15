@@ -6,8 +6,8 @@
     "about_me": {
         "title": "Qui suis-je ?",
         "line1": "Curieux, passioné par la programmation et la résolution de problèmes, je passe mon temps libre à faire de la veille technologique et coder mes projets personnels.",
-        "line2": "Après un DUT à <1>l'IUT de Reims</1>, j'ai obtenu mon diplôme d'ingénieur informatique au <3>Cnam</3>",
-        "line3": "J'ai effectué mon alternance à <1>Un-zéro-un</1>, une agence web localisée à Charleville-Mézières. Puis j'ai travaillé <3>Spacefoot</3> dans l'équipe e-commerce, où j'étais en charge du développement de l'outil interne et l'intégration technique avec les différentes marketplaces."
+        "line2": "Après un DUT à <1>l'IUT de Reims</1>, j'ai obtenu mon diplôme d'ingénieur informatique au <3>Cnam</3>.",
+        "line3": "J'ai effectué mon alternance à <1>Un-zéro-un</1>, une agence web localisée à Charleville-Mézières. Puis j'ai travaillé chez <3>Spacefoot</3> dans l'équipe e-commerce, où j'étais en charge du développement de l'outil interne et de l'intégration technique avec les différentes marketplaces."
     },
     "projects": {
         "title": "Projets",
@@ -27,7 +27,7 @@
         "mpi": {
             "title": "MP Integrator",
             "line1": "À <1>Spacefoot</1>, la majorité de mon travail était sur cet outil.",
-            "line2": "Il est utilisé pour synchroniser les offres sur de multiples et faciliter la création de produits entre autre."
+            "line2": "Il est utilisé pour synchroniser les offres sur de multiples marketplaces et faciliter la création de produits entre autre."
         },
         "deal_and_co": {
             "title": "Deal&Co",
