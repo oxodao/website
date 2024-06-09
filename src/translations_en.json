@@ -7,7 +7,8 @@
         "title": "About me",
         "line1": "Curious, passionate about programming and solving problems, I spend my free time doing technology watch and building my personal projects.",
         "line2": "After an IT degree at the <1>Reims \"Institut universitaire de technologie\"</1>, I graduated a computer science engineering diploma at the <3>Cnam</3>.",
-        "line3": "I worked at <1>Un-zéro-un</1> part-time, a digital agency located in Charleville-Mézières. I then went on to work at <3>Spacefoot</3> in the e-commerce team, focusing on building the internal tool and integrating with the various marketplaces."
+        "line3": "I worked at <1>Un-zéro-un</1> part-time, a digital agency located in Charleville-Mézières. I then went on to work at <3>Spacefoot</3> in the e-commerce team, focusing on building the internal tool and integrating with the various marketplaces.",
+        "line4": "I'm currently working at <1>Multi-Impact</1> on insurance software."
     },
     "projects": {
         "title": "Projects",

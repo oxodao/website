@@ -7,7 +7,8 @@
         "title": "Qui suis-je ?",
         "line1": "Curieux, passioné par la programmation et la résolution de problèmes, je passe mon temps libre à faire de la veille technologique et coder mes projets personnels.",
         "line2": "Après un DUT à <1>l'IUT de Reims</1>, j'ai obtenu mon diplôme d'ingénieur informatique au <3>Cnam</3>.",
-        "line3": "J'ai effectué mon alternance à <1>Un-zéro-un</1>, une agence web localisée à Charleville-Mézières. Puis j'ai travaillé chez <3>Spacefoot</3> dans l'équipe e-commerce, où j'étais en charge du développement de l'outil interne et de l'intégration technique avec les différentes marketplaces."
+        "line3": "J'ai effectué mon alternance à <1>Un-zéro-un</1>, une agence web localisée à Charleville-Mézières. Puis j'ai travaillé chez <3>Spacefoot</3> dans l'équipe e-commerce, où j'étais en charge du développement de l'outil interne et de l'intégration technique avec les différentes marketplaces.",
+        "line4": "Je travaille actuellement à <1>Multi-Impact</1> sur des logiciels d'assurance"
     },
     "projects": {
         "title": "Projets",

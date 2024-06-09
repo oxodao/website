@@ -13,7 +13,7 @@ import './assets/css/index.css'
 import './assets/css/main_menu.css'
 import './assets/css/colored.css'
 
-export const IS_LOOKING_FOR_JOB = true;
+export const IS_LOOKING_FOR_JOB = false;
 
 i18n
   .use(LanguageDetector)

@@ -24,6 +24,11 @@ export default function AboutMe() {
                     I then went on to work at <a className="colored RED" href="https://spacefoot.com" target="_blank" rel="norefferer noopener">Spacefoot</a> in the e-commerce team, focusing on integrating with the various marketplaces.
                 </Trans>
             </p>
+            <p>
+                <Trans i18n={i18n} i18nKey="about_me.line4">
+                    I'm currently working at <a className="colored RED" href="https://www.multi-impact.com/" target="_blank" rel="norefferer noopener">Multi-Impact</a> on insurance software.
+                </Trans>
+            </p>
         </div>
     </section>
 }
