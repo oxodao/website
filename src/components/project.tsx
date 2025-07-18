@@ -22,9 +22,15 @@ export default function Project({project}: Props) {
             {
                 project.links
                 && project.links.length > 0
+                && typeof project.links !== 'string'
                 && project.links.map(x => <a href={x.url} key={x.name} target="_blank" rel="noopenner noreferrer">
                     <Colored color="GREEN">{t('projects.' + project.title + '.links.' + x.name)}</Colored>
                 </a>)
+            }
+            {
+                project.links
+                && typeof project.links === 'string'
+                && <p>{t(project.links)}</p>
             }
             {
                 (!project.links || project.links.length === 0)

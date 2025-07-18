@@ -17,6 +17,7 @@
         "perso": "Projets personnels",
         "built_with": "Fait avec",
         "built_in": "Fait en",
+        "defunct": "Projet abandonné",
 
         "your_company": {
             "title": "Votre entreprise",
@@ -24,6 +25,13 @@
             "links": {
                 "contact_me": "Contactez moi !"
             }
+        },
+        "tarif": {
+            "title": "Tarificateur",
+            "line1": "À <1>Multi-Impact</1>, je travaille principalement sur le Tarificateur.",
+            "line2": "C'est un outil interne qui contient tous les tarifs des compagnies d'assurance et effectue les calculs pour une personne donnée en fonction de nombreux paramètres.",
+            "line3": "Une des tâches les plus importantes sur laquelle je travaille est la migration de l'API entière de GraphQL vers Rest, et la création de tests unitaires.",
+            "will_be_migrated": "Sera migré vers React"
         },
         "mpi": {
             "title": "MP Integrator",
@@ -50,6 +58,19 @@
             "line1": "Après mon stage, j'ai travaillé un mois à Un-zéro-un. J'ai eu l'occasion de travailler sur la marketplace Côté-Meuse.",
             "links": {
                 "website": "Site web"
+            }
+        },
+        "partyhall": {
+            "title": "PartyHall",
+            "line1": "Mon projet perso le plus abouti, c'est une machine à souvenirs: Cabine photo, karaoké et plus encore.",
+            "line2": "C'est une combinaison de plusieurs projets:",
+            "line3": "La machine (Hardware, electronique, bois, ...)",
+            "line4": "PartyHall lui-même (Le logiciel de la machine)",
+            "line5": "PartyNexus (un hub pour synchroniser le tout et partager avec ses amis)",
+            "line6": "C'est mon projet le plus long, commencé en 2021 et toujours en amélioration continue.",
+            "links": {
+                "website": "Documentation",
+                "github": "Github"
             }
         },
         "prowty": {

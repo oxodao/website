@@ -9,6 +9,6 @@ export type Project = {
     image: string;
     title: string;
     description: ReactNode;
-    links: Link[];
+    links: Link[]|string;
     placeholder?: boolean;
 }

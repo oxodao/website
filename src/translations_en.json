@@ -17,6 +17,7 @@
         "perso": "Personal projects",
         "built_with": "Built with",
         "built_in": "Built in",
+        "defunct": "Defunct",
 
         "your_company": {
             "title": "Your company",
@@ -24,6 +25,13 @@
             "links": {
                 "contact_me": "Contact me!"
             }
+        },
+        "tarif": {
+            "title": "Tarificateur",
+            "line1": "While at <1>Multi-Impact</1>, I mainly worked on the Tarificateur.",
+            "line2": "It's an internal tool that contains all the insurance companies' products and makes the calculations for a given person depending on lots of parameters, and creating unit-tests.",
+            "line3": "One of the big task I'm working on is the migration of the whole API from GraphQL to Rest.",
+            "will_be_migrated": "Will be migrated to React"
         },
         "mpi": {
             "title": "MP Integrator",
@@ -50,6 +58,19 @@
             "line1": "After my internship, I worked one more month at Un-zéro-un. I had the chance to work on the Côté-Meuse marketplace.",
             "links": {
                 "website": "Website"
+            }
+        },
+        "partyhall": {
+            "title": "PartyHall",
+            "line1": "My main side-project, PartyHall is a memory-making machine: Photo booth, Karaoke and more.",
+            "line2": "It is a combination multiplee components:",
+            "line3": "The hardware (Electronics, wood, ...)",
+            "line4": "PartyHall itself (The appliance software)",
+            "line5": "PartyNexus (A hub to synchronize everything and share with friends)",
+            "line6": "This is my longest-running project, started in 2021 and still going strong.",
+            "links": {
+                "website": "Documentation",
+                "github": "Github"
             }
         },
         "prowty": {

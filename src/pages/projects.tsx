@@ -4,11 +4,26 @@ import Project from "../components/project";
 import { IS_LOOKING_FOR_JOB } from "../main.tsx";
 import { Project as ProjectObj } from '../types/project.ts';
 
-{/* @TODO add a "other projects" page or a "smaller projects" so that I can add all my projects that I don't want on the main page */}
+{/* @TODO add a "other projects" page or a "smaller projects" so that I can add all my projects that I don't want on the main page */ }
 export default function Projects() {
-    const {t, i18n} = useTranslation();
+    const { t, i18n } = useTranslation();
 
     const professional_projects: ProjectObj[] = [
+        {
+            image: 'tarif',
+            title: 'tarif',
+            description: <>
+                <p>
+                    <Trans i18n={i18n} i18nKey="projects.tarif.line1">
+                        While at <a className="colored RED" href="https://multi-impact.com/" target="_blank" rel="noreferrer noopener">Multi-Impact</a>, I mainly worked on the "Tarificateur".
+                    </Trans>
+                </p>
+                <p><Trans i18n={i18n} i18nKey="projects.tarif.line2">It's an internal tool that contains all the insurance companies' products and makes the calculations for a given person depending on lots of parameters.</Trans></p>
+                <p><Trans i18n={i18n} i18nKey="projects.tarif.line3">One of the big task I'm working on is the migration of the whole API from GraphQL to Rest.</Trans></p>
+                <p>{t('projects.built_with')} Api-Platform + VueJS ({t('projects.tarif.will_be_migrated')})</p>
+            </>,
+            links: [],
+        },
         {
             image: 'mpi',
             title: 'mpi',
@@ -35,11 +50,7 @@ export default function Projects() {
                 <p><Trans i18n={i18n} i18nKey="projects.deal_and_co.line2">This mobile app lets you find discounts, gifts, ... with the partners around you.</Trans></p>
                 <p>{t('projects.built_with')} React + API-Platform</p>
             </>,
-            links: [
-                {name: 'applestore', url: 'https://apps.apple.com/fr/app/deal-co/id1559608376'},
-                {name: 'playstore', url: 'https://play.google.com/store/apps/details?id=com.deal_and_co.app'},
-                {name: 'website', url: 'https://www.deal-and-co.com/'},
-            ],
+            links: 'projects.defunct',
         },
         {
             image: 'gescicca',
@@ -58,11 +69,28 @@ export default function Projects() {
                 <p><Trans i18n={i18n} i18nKey="projects.cotemeuse.line1">After my internship, I worked one more month at Un-zéro-un. I had the chance to work on the Côté-Meuse marketplace.</Trans></p>
                 <p>{t('projects.built_in')} React + Symfony / API-Platform</p>
             </>,
-            links: [{name: 'website', url: 'https://www.cote-meuse.fr'}]
+            links: [{ name: 'website', url: 'https://www.cote-meuse.fr' }]
         }
     ];
 
     const personal_projects: ProjectObj[] = [
+        {
+            image: 'partyhall',
+            title: 'partyhall',
+            description: <>
+                <p><Trans i18n={i18n} i18nKey="projects.partyhall.line1"></Trans></p>
+                <p><Trans i18n={i18n} i18nKey="projects.partyhall.line2"></Trans></p>
+                <p><Trans i18n={i18n} i18nKey="projects.partyhall.line3"></Trans></p>
+                <p><Trans i18n={i18n} i18nKey="projects.partyhall.line4"></Trans></p>
+                <p><Trans i18n={i18n} i18nKey="projects.partyhall.line5"></Trans></p>
+                <p><Trans i18n={i18n} i18nKey="projects.partyhall.line6"></Trans></p>
+                <p>{t('projects.built_in')} React+Golang (PartyHall), React+API-Platform (PartyNexus)</p>
+            </>,
+            links: [
+                { name: 'github', url: 'https://github.com/partyhall' },
+                { name: 'website', url: 'https://partyhall.github.io' },
+            ],
+        },
         {
             image: 'prowty',
             title: 'prowty',
@@ -83,8 +111,8 @@ export default function Projects() {
                 <p>{t('projects.built_in')} Golang</p>
             </>,
             links: [
-                {name: 'github', url: 'https://github.com/oxodao/metaprint'},
-                {name: 'aur', url: 'https://aur.archlinux.org/packages/metaprint-bin'}
+                { name: 'github', url: 'https://github.com/oxodao/metaprint' },
+                { name: 'aur', url: 'https://aur.archlinux.org/packages/metaprint-bin' }
             ],
         },
         {
@@ -98,8 +126,8 @@ export default function Projects() {
                 <p>{t('projects.built_in')} VueJS + Golang (with websockets)</p>
             </>,
             links: [
-                {name: 'github_next', url: 'https://github.com/oxodao/CardsAgainstOverflow'},
-                {name: 'github', url: 'https://github.com/oxodao/CardsAgainstOverflow-legacy'},
+                { name: 'github_next', url: 'https://github.com/oxodao/CardsAgainstOverflow' },
+                { name: 'github', url: 'https://github.com/oxodao/CardsAgainstOverflow-legacy' },
             ],
         },
         {
@@ -112,7 +140,7 @@ export default function Projects() {
                 <p>{t('projects.built_in')} VueJS + Golang</p>
             </>,
             links: [
-                { name: 'jlc_twitch', url: 'https://www.twitch.tv/josettelachevre'},
+                { name: 'jlc_twitch', url: 'https://www.twitch.tv/josettelachevre' },
                 { name: 'github', url: 'https://github.com/oxodao/TPBT' },
             ],
         },
@@ -132,24 +160,24 @@ export default function Projects() {
         <div>
             <h1><Colored color="GREEN">0x02. {t('projects.title')}</Colored></h1>
 
-            <h2 style={{marginTop: '1em'}}><Colored color="YELLOW">{t('projects.pro')}</Colored></h2>
+            <h2 style={{ marginTop: '1em' }}><Colored color="YELLOW">{t('projects.pro')}</Colored></h2>
             {
                 IS_LOOKING_FOR_JOB && <Project project={{
-                        image: 'your_company',
-                        title: 'your_company',
-                        description: <>
-                            <p><Trans i18n={i18n} i18nKey="projects.your_company.line1">I'm currently looking for a job. Let's build something cool together !</Trans></p>
-                        </>,
-                        links: [
-                            {name: 'contact_me', url: '#contact'}
-                        ],
-                    }}
+                    image: 'your_company',
+                    title: 'your_company',
+                    description: <>
+                        <p><Trans i18n={i18n} i18nKey="projects.your_company.line1">I'm currently looking for a job. Let's build something cool together !</Trans></p>
+                    </>,
+                    links: [
+                        { name: 'contact_me', url: '#contact' }
+                    ],
+                }}
                 />
             }
-            { professional_projects.map(x => <Project project={x} key={x.title} />) }
+            {professional_projects.map(x => <Project project={x} key={x.title} />)}
 
             <h2><Colored color="YELLOW">{t('projects.perso')}</Colored></h2>
-            { personal_projects.map(x => <Project project={x} key={x.title} />) }
+            {personal_projects.map(x => <Project project={x} key={x.title} />)}
         </div>
     </section>
 }
